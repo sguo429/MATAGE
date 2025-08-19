@@ -8,7 +8,8 @@ pheno_infile <- args[1]
 kins_infile <- args[2]
 ID_name <- args[3]
 formula <- args[4]
-null_model_file <- args[5]
+family <- eval(parse(text = args[5]))
+null_model_file <- args[6]
 
 # Read in the phenotype data
 pheno_data <- fread(file = pheno_infile, header = TRUE, data.table = FALSE)
@@ -33,6 +34,6 @@ null_model <- glmmkin(
 	data = pheno_data,
 	kins = kins,
 	id = ID_name,
-	family = gaussian(link = "identity"))
+	family = family)
 
-save(null_model, file = null_model_file)
+save(null_model, family, file = null_model_file)
