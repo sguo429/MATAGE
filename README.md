@@ -16,16 +16,16 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
      Directory for storing the log files.
 
    --pheno_infile
-     Directory containing the phenotype files.
+     Directory for the phenotype file.
 
    --geno_infile
-     Directory containing the genotype files.
+     Directory for the genotype file.
 
    --geno_start_col
      The column index at which the genotype data begins in the genotype file.
 
    --kins_infile
-     Directory containing the kinship files. If no kinship matrix is required, set this to NULL.
+     Directory containing the kinship file. If no kinship matrix is required, set this to NULL.
 
    --outfile_dir
      Directory for storing the test result output files (not including the file name).
@@ -37,13 +37,13 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
      Name of the sample ID column in the phenotype file.
 
    --formula
-     The model for the null hypothesis, including the phenotype and covariates but excluding genetic effects.
+     The model for the null hypothesis, including the phenotype and covariates but excluding genotype.
 
    --family
-     	A description of the distribution and link function to be used in the model. Either "gaussian(link = "identity")" for continuous outcome or "binomial(link = "logit")" for binary outcome.
+     A description of the distribution and link function to be used in the model. Either "gaussian(link = "identity")" for continuous outcome or "binomial(link = "logit")" for binary outcome.
 
    --null_model_file
-     Directory for storing the null model RData files.
+     Directory for the null model RData file.
 
    --total_rows
      Total number of rows (genotypes) in the genotype file.
