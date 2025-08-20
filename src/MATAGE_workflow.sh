@@ -14,7 +14,7 @@ kins_infile=${work_dir}/kinship.txt
 
 outfile_dir=${work_dir}/results
 
-name=$2
+name=outfile_name
 
 ID_name=ID
 
@@ -48,7 +48,7 @@ for start_row in $(seq 1 $num_rows $total_rows); do
     wait_for_jobs
 
     end_row=$((start_row + num_rows - 1))
-    outfile=${outfile_dir}/${name}_results_${start_row}_${end_row}.txt
+    outfile=${outfile_dir}/${name}_${start_row}_${end_row}.txt
 
     # Run the R script
     /usr/bin/time -v Rscript ./scripts/MATAGE_general.R $geno_infile $start_row $num_rows $outfile $null_model_file $geno_start_col \
