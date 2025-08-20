@@ -4,10 +4,6 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
 <br />
 
 ## Command Line Options
-
-<details>
-     <summary> <b>List of Options</b> </summary>
-
 ```
    --work_dir         
      A working directory.
@@ -55,7 +51,6 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
      Maximum number of jobs to submit simultaneously.
 
 ```
-</details>
 
 <br /> 
 
