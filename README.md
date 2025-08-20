@@ -59,13 +59,13 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
 
 <br /> 
 
-### Input Files
+## Input Files
 
 MATAGE accepts plain text genotype file, either original ".txt" or compressed ".txt.gz" file.
 
 <br />
 
-### Output File
+## Output File
 
 MATAGE will write results to the output file.
 Below are details of the column headers in the output file.
