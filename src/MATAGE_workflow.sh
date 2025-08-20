@@ -51,9 +51,8 @@ for start_row in $(seq 1 $num_rows $total_rows); do
     outfile=${outfile_dir}/${name}_${start_row}_${end_row}.txt
 
     # Run the R script
-    /usr/bin/time -v Rscript ./scripts/MATAGE_general.R $geno_infile $start_row $num_rows $outfile $null_model_file $geno_start_col \
-        > ${log_dir}/${name}_output_${start_row}.log 2>&1 \
-        2>> ${log_dir}/${name}_time_${start_row}.log &
+    Rscript ./scripts/MATAGE_general.R $geno_infile $start_row $num_rows $outfile $null_model_file $geno_start_col &
+
 done
 
 wait
