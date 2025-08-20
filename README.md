@@ -56,3 +56,29 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
 
 ```
 </details>
+
+<br /> 
+
+### Input Files
+
+MATAGE accepts plain text genotype file, either original ".txt" or compressed ".txt.gz" file.
+
+<br />
+
+### Output File
+
+MATAGE will write results to the output file.
+Below are details of the column headers in the output file.
+
+```diff 
+ID              - The genotype ID.
+n               - The sample size.
+knots           - The unique genotype counts.
+mean_G          - The mean value of the genotype.
+var_G           - The variance of the genotype.
+p_value_l       - The linear p-value.
+p_value_nl      - The nonlinear p-value.
+p_value_joint   - The MATAGE p-value.
+```
+
+<br />
