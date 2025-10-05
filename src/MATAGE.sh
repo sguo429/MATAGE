@@ -25,7 +25,7 @@ Required Arguments:
   --formula           Model formula for the null model (e.g., "Phenotype~Age+Sex"). Must be quoted.
   --family            Model family type: 'linear' or 'logistic'.
   --geno_start_col    Integer specifying the starting column of genotype data in geno_infile.
-  
+
 Optional Arguments:
   --kins_infile       Path to the kinship matrix file. (Default: NULL)
   --total_rows        Total number of variants (rows) to process in geno_infile. (Default: line count of geno_infile, minus header)
@@ -111,9 +111,9 @@ else
 fi
 
 # Get the absolute path to the directory containing this script
-# This allows the R scripts in the 'scripts' subdirectory to be found reliably
+# This allows the R scripts to be found reliably
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-R_SCRIPT_DIR="${SCRIPT_DIR}/scripts"
+R_SCRIPT_DIR="${SCRIPT_DIR}"
 
 # --- 5. Define Helper Function ---
 # Function to check the number of running background jobs and wait if it exceeds max_jobs
