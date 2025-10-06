@@ -27,7 +27,7 @@ Optional Arguments:
 
 ## Input Files
 
-MATAGE accepts plain text genotype file, either original ".txt" or compressed ".txt.gz" file.
+MATAGE accepts plain text genotype files, either the ".txt" or compressed ".txt.gz" files.
 
 <br />
 
