@@ -9,7 +9,7 @@ Required Arguments:
   --pheno_infile      Path to the phenotype data file.
   --geno_infile       Path to the genotype data file.
   --outfile_dir       Directory to save result files.
-  --outfile_name      Basename for output files.
+  --outfile_name      Basename for output files (excluding the file extension).
   --ID_name           Column name for subject IDs in the phenotype file.
   --formula           Model formula for the null model (e.g., "Phenotype~Age+Sex"). Must be quoted.
   --family            Model family type: 'linear' or 'logistic'.
