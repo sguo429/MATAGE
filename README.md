@@ -47,7 +47,7 @@ p_value_nl      - The nonlinear p-value.
 p_value_joint   - The MATAGE p-value.
 ```
 
-## Command line example (Assuming the two R scripts are in the same directory as the bash script)
+## Command line example
 ```
 ./MATAGE.sh \
     --pheno_infile /your_directory/pheno/pheno.txt \
