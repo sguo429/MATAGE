@@ -47,4 +47,20 @@ p_value_nl      - The nonlinear p-value.
 p_value_joint   - The MATAGE p-value.
 ```
 
+## Command line example (Assuming the two R scripts are in the same directory as the bash script)
+```
+./MATAGE.sh \
+    --pheno_infile /your_directory/pheno/pheno.txt \
+    --geno_infile /your_directory/geno/geno.txt \
+    --kins_infile /your_directory/kins/kinship.txt \
+    --outfile_dir /your_directory/output \
+    --outfile_name "test_result" \
+    --ID_name "ID" \
+    --formula "Phenotype~Age+Sex" \
+    --family linear \
+    --geno_start_col 3 \
+    --total_rows 1800 \
+    --num_rows 360 \
+    --max_jobs 5
+```
 <br />
