@@ -5,51 +5,22 @@ MATAGE (additive Mixed-model Association Tests for multi-Allelic Genetic Effects
 
 ## Command Line Options
 ```
-   --work_dir         
-     A working directory.
+Required Arguments:
+  --pheno_infile      Path to the phenotype data file.
+  --geno_infile       Path to the genotype data file.
+  --outfile_dir       Directory to save result files.
+  --outfile_name      Basename for output files.
+  --ID_name           Column name for subject IDs in the phenotype file.
+  --formula           Model formula for the null model (e.g., "Phenotype~Age+Sex"). Must be quoted.
+  --family            Model family type: 'linear' or 'logistic'.
+  --geno_start_col    Integer specifying the starting column of genotype data in geno_infile.
 
-   --log_dir
-     Directory for storing the log files.
-
-   --pheno_infile
-     Directory for the phenotype file.
-
-   --geno_infile
-     Directory for the genotype file.
-
-   --geno_start_col
-     The column index at which the genotype data begins in the genotype file.
-
-   --kins_infile
-     Directory containing the kinship file. If no kinship matrix is required, set this to NULL.
-
-   --outfile_dir
-     Directory for storing the test result output files (not including the file name).
-
-   --name
-     The output file name, not including the file extension.
-
-   --ID_name
-     Name of the sample ID column in the phenotype file.
-
-   --formula
-     The model for the null hypothesis, including the phenotype and covariates but excluding genotype.
-
-   --family
-     A description of the distribution and link function to be used in the model. Either "gaussian(link = "identity")" for continuous outcome or "binomial(link = "logit")" for binary outcome.
-
-   --null_model_file
-     Directory for the null model RData file.
-
-   --total_rows
-     Total number of rows (genotypes) in the genotype file.
-
-   --num_rows
-     Number of rows (genotypes) to test per job.
-
-   --max_jobs
-     Maximum number of jobs to submit simultaneously.
-
+Optional Arguments:
+  --kins_infile       Path to the kinship matrix file. (Default: NULL)
+  --total_rows        Total number of variants (rows) to process in geno_infile. (Default: line count of geno_infile, minus header)
+  --num_rows          Number of rows to process per job. (Default: same as --total_rows)
+  --max_jobs          Maximum number of parallel Rscript jobs to run. (Default: 1)
+  -h, --help          Display this help message and exit.
 ```
 
 <br /> 
